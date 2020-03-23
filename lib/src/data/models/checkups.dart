@@ -16,10 +16,10 @@ class Checkup {
     this.id,
     this.userId,
     this.created,
-    dataContributionPreference,
+    bool dataContributionPreference,
     this.location,
-    subjectiveResponses,
-    vitalsResponses,
+    List<SubjectiveQuestionResponse> subjectiveResponses,
+    List<VitalsResponse> vitalsResponses,
   })  : dataContributionPreference = dataContributionPreference ?? true,
         subjectiveResponses = subjectiveResponses ?? [],
         vitalsResponses = vitalsResponses ?? [];

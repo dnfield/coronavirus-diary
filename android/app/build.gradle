@@ -38,7 +38,8 @@ android {
 
     defaultConfig {
         applicationId "com.covidNearMe.app"
-        minSdkVersion 16
+        // flutter_secure_storage requires at least API 18
+        minSdkVersion 18
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName

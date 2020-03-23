@@ -29,15 +29,18 @@ dependencies:
   flutter_launcher_icons: ^0.7.3
   flutter_markdown: ^0.3.4
   flutter_phoenix: ^0.1.0
+  flutter_secure_storage: ^3.3.1+1
   font_awesome_flutter: ^8.7.0
   geolocator: ^5.3.0
   hydrated_bloc: ^3.0.0
   intl: ^0.16.0
+  local_auth: ^0.6.1+3
   meta: ^1.1.8
   path_provider: ^1.6.5
   path: ^1.6.4
   provider: ^4.0.4
   share: ^0.6.3+6
+  sqflite_sqlcipher: ^1.0.0
   uuid: ^2.0.4
 
 dev_dependencies:
@@ -57,3 +60,11 @@ flutter:
   assets:
     - assets/copy/
     - assets/images/
+
+dependency_overrides:
+  # See https://github.com/davidmartos96/sqflite_sqlcipher/blob/publish/sqflite/README.md
+  sqflite:
+    git:
+      url: https://www.github.com/davidmartos96/sqflite_sqlcipher.git
+      path: sqflite
+      ref: fmdb_override
